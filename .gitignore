@@ -1,0 +1,8 @@
+__pycache__
+icon
+venv
+docs/_build
+.coverage
+.vscode
+.*.swp
+.idea
