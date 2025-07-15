@@ -22,15 +22,6 @@ class AWXConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
     VERSION = 1
 
-    async def async_step_import(self, import_data):
-        """
-        Handle import from configuration.yaml (SOURCE_IMPORT).
-        Creates a config entry without showing a form.
-        """
-        return self.async_create_entry(
-            title=import_data[CONF_TOWER_URL],
-            data=import_data,
-        )
 
     async def async_step_user(self, user_input=None):
         """
