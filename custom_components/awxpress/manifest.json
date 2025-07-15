@@ -1,11 +1,9 @@
 {
   "domain": "awxpress",
   "name": "AWXpress",
-  "version": "1.0.0",
-  "documentation": "https://github.com/jualfoar/awxpress",
-  "requirements": ["awxkit", "croniter"],
-  "dependencies": [],
   "codeowners": ["@jualfoar"],
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  "documentation": "https://github.com/jualfoar/awxpress",
+  "requirements": [],
+  "version": "1.0.0"
 }
