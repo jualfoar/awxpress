@@ -7,6 +7,6 @@
   "documentation": "https://github.com/jualfoar/awxpress",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/jualfoar/awxpress/issues",
-  "requirements": [],
+  "requirements": ["awxkit==21.10.0", "croniter>=1.4.0"],
   "version": "1.0.0"
 }
