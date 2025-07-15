@@ -4,7 +4,7 @@ The AWXpress integration.
 import logging
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
-from homeassistant import config_entries
+from homeassistant.helpers import config_validation as cv
 
 from .const import DOMAIN
 from .coordinator import AWXCoordinator
@@ -12,21 +12,7 @@ from .notifications import setup_log_rotation
 
 _LOGGER = logging.getLogger(__name__)
 
-
-async def async_setup(hass: HomeAssistant, config: dict):
-    """Import YAML config (if present) as a Config Entry."""
-    conf = config.get(DOMAIN)
-    if conf:
-        _LOGGER.debug("Importing AWXpress config from YAML: %s", conf)
-        hass.async_create_task(
-            hass.config_entries.flow.async_init(
-                DOMAIN,
-                context={"source": config_entries.SOURCE_IMPORT},
-                data=conf,
-            )
-        )
-    return True
-
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up AWXpress from a config entry."""
