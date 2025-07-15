@@ -16,7 +16,6 @@ from .const import (
     DEFAULT_DEBUG_LEVEL,
 )
 
-@config_entries.HANDLERS.register(DOMAIN)
 class AWXConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for AWXpress."""
 
