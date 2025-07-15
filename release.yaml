@@ -1,0 +1,11 @@
+version: "1.0.0"
+changelog: |
+  🎉 Initial release of AWXpress!
+
+  - UI-only integration with Config Flow
+  - Switch entities to launch AWX job templates
+  - Status sensor with cron-based polling
+  - Persistent notifications on job completion
+  - Weekly log cleanup handler
+
+  🛠️ Built-in support for HACS and Home Assistant 2021.12+
