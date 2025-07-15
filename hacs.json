@@ -1,7 +1,6 @@
 {
     "name": "AWXpress",
     "content_in_root": false,
-    "documentation": "README.md",
     "country": "ALL",
     "icon": "icon.png"
 }
