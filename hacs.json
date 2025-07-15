@@ -2,5 +2,5 @@
     "name": "AWXpress",
     "content_in_root": false,
     "country": "ALL",
-    "icon": "icon.png"
+    "render_readme": true
 }
